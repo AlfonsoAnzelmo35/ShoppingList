@@ -1,0 +1,95 @@
+*{
+    user-select: none;
+    font-family: 'Satisfy', cursive;
+}
+body{
+    background-color: #f8e5e9;
+    margin: 0;
+}
+.shopping-list-container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.shopping-list-container img{
+    width: 30%;
+    margin: auto;
+}
+
+.shopping-list-container input,
+.shopping-list-container button{
+    height: 40px;
+    width: 50%;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #eb8196;
+    color: white;
+    border: white;
+    border: 2px solid;
+}
+.shopping-list-container button{
+    background-color: #3C0919;
+    
+}
+.shopping-list-container button:hover{
+    background-color: #E2294F;
+    cursor: pointer;
+}
+.shopping-list-container .shopping-list{
+    position: relative;
+    padding: 0;
+    width: 50%;
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.shopping-list-container .shopping-list li{
+    font-size: 25px;
+    padding: 20px 25px;
+    font-weight: 800;
+    width: fit-content;
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2) ;
+    background-color: #E2294F;
+    /*tutti i li hanno il flex grow 1 quindi quando andranno a capo con flex-wrap
+    occuperanno tutta la larghezza!*/
+    flex-grow: 1;
+    color: white;
+}
+
+.shopping-list-container .shopping-list li:hover{
+    background-color: #C41E3D;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+
+    
+    .shopping-list-container img{
+        width: 50%;
+    }
+    .shopping-list-container .shopping-list{
+        width: 90%;
+    }
+    .shopping-list-container button{
+        font-size: 20px;
+        width: 90%;
+    }
+    .shopping-list-container input{
+        width: 90%;
+        font-size: 25px;
+    }
+    .shopping-list-container .shopping-list li{
+        font-size: 15px;    
+        padding: 10px 15px;
+    }
+}
